@@ -169,11 +169,12 @@ footer{
     align-items: center; /*alinea a los hijos vertical*/
 }
 
+
 .redes-sociales{
-    display: flex;
-    align-items: center; /*alinea a los hijos vertical*/
+    display: none;
+    /* align-items: center; /*alinea a los hijos vertical
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 1rem; */
 }
 
 .redes-sociales a img{
@@ -207,6 +208,8 @@ footer{
         transform: scale(0.9) !important;
         font-weight:lighter !important;
     }
+    
+    /* estilos del index*/
     
     .main-uno{
         width: 100%;
@@ -335,6 +338,22 @@ footer{
 
     footer{
         height: 70px;
+        
+    }
+
+    .redes-sociales{
+        display: flex;
+        align-items: center; /*alinea a los hijos vertical*/
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+    
+    .redes-sociales a img{
+        height: 45px;
+        width: 45px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 1rem;
         
     }
 
