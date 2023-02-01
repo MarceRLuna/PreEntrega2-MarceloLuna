@@ -169,21 +169,8 @@ footer{
     align-items: center; /*alinea a los hijos vertical*/
 }
 
-
 .redes-sociales{
     display: none;
-    /* align-items: center; /*alinea a los hijos vertical
-    flex-wrap: wrap;
-    margin: 1rem; */
-}
-
-.redes-sociales a img{
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin: 1rem;
-    
 }
 
 
