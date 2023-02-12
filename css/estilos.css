@@ -26,9 +26,7 @@ body{
     background-color: brown;
     font-size: 50px;
     font-style: oblique;
-    
     margin: 1rem;
-
     border: solid black 5px;
 }
 
@@ -37,9 +35,7 @@ body{
 .menu{
    
     background-color: lightcoral;
-
     border: solid black 3px;
-
     margin: 0.2rem;
        
 }
@@ -103,6 +99,7 @@ body{
 .galeria-item{
     position: relative;
 }
+
 .titulo-imagen{
     display: block;
     color: rgb(228, 235, 241) !important;
