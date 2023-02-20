@@ -150,6 +150,10 @@ body{
     
 }
 
+.alquilertexto{
+    width: 100%;
+}
+
 .alquilertexto h2{
     margin-top: 0.5rem;
     text-align: center;
@@ -175,23 +179,19 @@ body{
     font-weight: bold;
 }
 
-.alquilertextodos h3{
+.alquilertextodos h3, h4{
     text-align: center;
 }
 
 .alquilertextodos p{
-    margin: 1rem;
+    margin: .5rem 1rem 1rem 1rem;
+    text-align: center;
 }
 
 .alquilertextodos p span{
     display: block;
     padding-top: 10px;
 
-}
-
-.ubicacion{
-    width: 100%;
-    padding-top: 10px;
 }
 
 .alquilertextodos iframe{
@@ -350,8 +350,8 @@ footer{
 
     .galeria-dos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,0.5fr);
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -379,22 +379,26 @@ footer{
     }
     
     .img-depto{
-        width: 95%;
+        width: 97%;
+        
     }
     
     .informacion{
         margin-top: 10px;
         display: grid;
         grid-template-areas: 
-        "alquilertexto alquilertextodos"
         "alquilertexto alquilertextodos";
+        grid-template-columns: 1fr 1fr;
         margin: 0 1rem 1rem 1rem;
           
     }
     
-    .alquilertexto{
+    .alquilertexto{        
       grid-area: alquilertexto;
-    
+    }
+
+    .alquilertexto p{
+        font-size: 16px;
     }
 
     .alquilertexto h2{
@@ -404,6 +408,10 @@ footer{
     .alquilertextodos{
         grid-area: alquilertextodos;
         text-align: center;
+    }
+
+    .alquilertextodos h3{
+        margin-top: 0.5rem;
     }
 
       
