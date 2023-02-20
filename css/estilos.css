@@ -100,6 +100,7 @@ body{
     padding: 0.3rem;
     margin: 0.5rem;
     object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/
+    
 }
 
 .galeria-item{
@@ -107,24 +108,13 @@ body{
 }
 
 .titulo-imagen{
-    display: block;
-    color: rgb(228, 235, 241) !important;
     text-decoration: none !important;
     position: absolute;
     left: 55px;
-    bottom: 57px;
+    bottom: 55px;
     font-size: 15px;
+    color: rgb(253, 253, 253) !important;
     
-}
-
-.titulo-img{
-    display: block;
-    color: rgb(228, 235, 241) !important;
-    text-decoration: none !important;
-    position: absolute;
-    left: 55px;
-    top: 630px;
-    font-size: 15px;
 }
 
 .galeria-item p{
@@ -260,6 +250,114 @@ footer{
 }
 
 
+/* estilos para pantallas de tablet*/
+
+@media screen and (min-width: 768px){
+
+    /*estilos para alquileres*/
+    
+    .alquileres{
+        padding: 0.2rem;
+    }
+
+   .galeria-img{
+        width:100% !important;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,0.2fr);
+        grid-template-rows: repeat(3,0.5fr);
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        border: solid black 2px;
+    }
+
+    .galeria-item{
+        position: relative;
+    }
+    .img-size{
+        width: 390px !important;
+        height: 399px;
+    }
+
+    .titulo-imagen{
+        position: absolute;
+        left: 25px;
+        bottom: 55px;
+        font-size: 17px;
+    }
+
+    .galeria-item p{
+        font-size: 17px;
+    }
+
+    /*estilos para propiedad-uno*/
+
+    .galeria-dos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,0.5fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0.2rem;
+        padding: 0.5rem;
+    }
+
+    .imagen-uno{
+        grid-column-start: span 2;
+        width: 100%;
+      
+    }
+    
+    .imagen-dos{
+        width: 95%;        
+    }
+        
+    .imagen-cuatro{
+        grid-column-start: span 2;
+        width: 100%;
+        
+    }   
+       
+    .informacion{
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: 
+        "alquilertexto alquilertextodos";
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem 1rem 1rem;
+          
+    }
+    
+    .alquilertexto{        
+      grid-area: alquilertexto;
+    }
+
+    .alquilertexto p{
+        font-size: 16px;
+    }
+
+    .alquilertexto h2{    
+        text-align: center;
+    }
+
+    .alquilertextodos{
+        grid-area: alquilertextodos;
+        text-align: center;
+    }
+
+    .alquilertextodos h3{
+        margin-top: 0.6rem;
+    }
+
+    .alquilertextodos iframe{
+        height: 59%;
+    }
+
+}    
+/* fin de estilos para pantallas de tablets*/
 
 /* estilos para pantallas de escritorio*/
 
@@ -341,7 +439,7 @@ footer{
     .titulo-imagen{
         position: absolute;
         left: 25px;
-        bottom: 25px;
+        bottom: 55px;
         
     }
 
@@ -349,77 +447,37 @@ footer{
     /*estilos para propiedad-uno*/
 
     .galeria-dos{
-        display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,0.5fr);
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        margin: 0.2rem;
+        
     }
 
     .imagen-uno{
+        grid-column-start: span 1;
         width: 100%;
       
-    }
-    
-    .imagen-dos{
-        width: 100%;
-        
-    }
-    
-    .imagen-tres{
-        width: 100%;
-        
     }
     
     .imagen-cuatro{
+        grid-column-start: span 1;
         width: 100%;
         
     }
     
-    .img-depto{
-        width: 97%;
-        
+    .imagen-dos{
+        width: 99%;
+        height: 99%;
+        object-fit: cover;
+    }
+
+    .alquilertextodos iframe{
+        height: 53%;
     }
     
-    .informacion{
-        margin-top: 10px;
-        display: grid;
-        grid-template-areas: 
-        "alquilertexto alquilertextodos";
-        grid-template-columns: 1fr 1fr;
-        margin: 0 1rem 1rem 1rem;
-          
-    }
-    
-    .alquilertexto{        
-      grid-area: alquilertexto;
-    }
-
-    .alquilertexto p{
-        font-size: 16px;
-    }
-
-    .alquilertexto h2{
-        text-align: center;
-    }
-
-    .alquilertextodos{
-        grid-area: alquilertextodos;
-        text-align: center;
-    }
-
-    .alquilertextodos h3{
-        margin-top: 0.5rem;
-    }
-
-      
     /*estilos de footer*/
 
     footer{
-        height: 70px;
-        
+        height: 70px;        
     }
 
     .redes-sociales{
@@ -441,3 +499,4 @@ footer{
     
 
 }
+
