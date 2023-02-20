@@ -496,6 +496,10 @@ footer{
         
     }
 
+    .redes-sociales a img:hover{
+        filter: drop-shadow(0 0 5px rgb(77, 66, 43));
+    }
+
     
 
 }
