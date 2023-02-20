@@ -15,7 +15,7 @@ body{
 
 /* estilos de header*/
 
-.contenedor-uno{
+.img-portada{
     height: 80%;
     width: 100%;    
 }
@@ -26,7 +26,7 @@ body{
     background-color: brown;
     font-size: 50px;
     font-style: oblique;
-    margin: 1rem;
+    margin: 0.2rem;
     border: solid black 5px;
 }
 
@@ -78,6 +78,10 @@ body{
 
 /*main*/
 
+.alquileres{
+    padding: 0.2rem;
+}
+
 .galeria-img{
     width: 100%;
     background: linear-gradient(180deg, rgba(222,126,72,0.9890710382513661) 51%, rgba(249,102,19,1) 73%);
@@ -86,14 +90,16 @@ body{
     align-items: center;
     justify-items: center;
     text-align: center;
+    
 }
 
 .img-size{
     width: 80%;
     border: solid black 3px;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 0.3rem;
     margin: 0.5rem;
+    object-fit: cover; /*prop. que permite que la img ocupe el espacio del contendor sin distorsionarse*/
 }
 
 .galeria-item{
@@ -105,11 +111,94 @@ body{
     color: rgb(228, 235, 241) !important;
     text-decoration: none !important;
     position: absolute;
-    left: 100px;
-    bottom: 20px;
+    left: 55px;
+    bottom: 57px;
+    font-size: 15px;
     
 }
 
+.titulo-img{
+    display: block;
+    color: rgb(228, 235, 241) !important;
+    text-decoration: none !important;
+    position: absolute;
+    left: 55px;
+    top: 630px;
+    font-size: 15px;
+}
+
+.galeria-item p{
+    font-size: 15px;
+}
+
+/*estilos para propiedad-uno*/
+
+.galeria-dos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.img-depto{
+    width: 95%;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    
+}
+
+.alquilertexto h2{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.alquilertexto p{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(231, 235, 238);
+    font-size: 15px;
+    
+}
+
+.alquilertexto p span{
+    display: block;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.locatario{
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.alquilertextodos h3{
+    text-align: center;
+}
+
+.alquilertextodos p{
+    margin: 1rem;
+}
+
+.alquilertextodos p span{
+    display: block;
+    padding-top: 10px;
+
+}
+
+.ubicacion{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.alquilertextodos iframe{
+    margin: 0 0 0.5rem 0.5rem;
+    width: 95%;
+    height: 300px;
+}
 
 /*estilos pagina contacto*/
 
@@ -223,6 +312,11 @@ footer{
 
     /*estilos para alquileres*/
 
+    .alquileres{
+        padding: 0.2rem;
+        
+    }
+
    .galeria-img{
         width:100% !important;
         padding: 1rem;
@@ -232,6 +326,7 @@ footer{
         justify-items: center;
         justify-content: center;
         text-align: center;
+        border: solid black 3px;
     }
 
     .galeria-item{
@@ -254,70 +349,64 @@ footer{
     /*estilos para propiedad-uno*/
 
     .galeria-dos{
-        width: 100%;
-        margin: 1rem;
-        padding: 1rem;
-        gap: 1rem;
         display: grid;
-        grid-template-areas: 
-        "imagen-uno imagen-dos"
-        "imagen-uno imagen-cuatro"
-        "imagen-tres imagen-tres";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
         justify-content: center;
         justify-items: center;
-    }
-
-    .contenedor-dos{
-        display: grid;
-        justify-content: center;
-        justify-items: center;
+        align-items: center;
+        margin: 0.2rem;
     }
 
     .imagen-uno{
         width: 100%;
-        height:100%;
-        grid-area: imagen-uno;
+      
     }
     
     .imagen-dos{
         width: 100%;
-        height: 100%;
-        grid-area: imagen-dos;
+        
     }
     
     .imagen-tres{
         width: 100%;
-        height: 100%;
-        grid-area: imagen-tres;
+        
     }
     
     .imagen-cuatro{
         width: 100%;
-        height: 100%;
-        grid-area: imagen-cuatro;
+        
     }
     
-    .imagen-uno img{
-        width: 100%;
-        height: 100%;
+    .img-depto{
+        width: 95%;
     }
     
-    .imagen-dos img{
-        width: 100%;
-        height: 100%;
+    .informacion{
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: 
+        "alquilertexto alquilertextodos"
+        "alquilertexto alquilertextodos";
+        margin: 0 1rem 1rem 1rem;
+          
     }
     
-    .imagen-tres img{
-        width: 100%;
-        height: 100%;
-    }
+    .alquilertexto{
+      grid-area: alquilertexto;
     
-    .imagen-cuatro img{
-        width: 100%;
-        height: 100%;
-       
     }
-    
+
+    .alquilertexto h2{
+        text-align: center;
+    }
+
+    .alquilertextodos{
+        grid-area: alquilertextodos;
+        text-align: center;
+    }
+
+      
     /*estilos de footer*/
 
     footer{
